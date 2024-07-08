@@ -35,7 +35,7 @@ const App = () => {
             element={
               <Link to="/admin/dashboard">
                 <div style={{display:"flex",height:"100vh",width:"100vw",justifyContent:"center",alignItems:"center" }} className="homediv">
-                <button style={{height:"70px",width:"150px",backgroundColor:"blue",color:"white",border:"2px solid black"}} className="homebutton">Visit Dashboard</button>
+                <button style={{height:"70px",fontSize:"20px",width:"150px",backgroundColor:"blue",color:"white",border:"2px solid black"}} className="homebutton">Visit Dashboard</button>
                 </div>
               </Link>
             }
