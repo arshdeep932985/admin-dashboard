@@ -23,6 +23,8 @@ const Stopwatch = lazy(() => import("./pages/apps/Stopwatch"));
 const Coupon = lazy(() => import("./pages/apps/Coupon"));
 const Toss = lazy(() => import("./pages/apps/Toss"));
 
+
+
 const App = () => {
   return (
     <Router>
@@ -32,8 +34,8 @@ const App = () => {
             path="/"
             element={
               <Link to="/admin/dashboard">
-                <div className="homebutton">
-                <button>Visit Dashboard</button>
+                <div style={{display:"flex",height:"100vh",width:"100vw",justifyContent:"center",alignItems:"center" }} className="homediv">
+                <button style={{height:"70px",width:"150px",backgroundColor:"blue",color:"white",border:"2px solid black"}} className="homebutton">Visit Dashboard</button>
                 </div>
               </Link>
             }

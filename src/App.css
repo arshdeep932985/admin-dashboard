@@ -4,14 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
-.homebutton{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
-  color:white;
-  border:2px solid black 
-}
+
 
 .logo {
   height: 6em;
