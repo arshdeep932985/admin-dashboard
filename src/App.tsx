@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { Suspense, lazy,} from "react";
 import Loader from "./components/Loader";
 
 
@@ -26,20 +26,12 @@ const Toss = lazy(() => import("./pages/apps/Toss"));
 
 
 const App = () => {
+
   return (
     <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Link to="/admin/dashboard">
-                <div style={{display:"flex",height:"100vh",width:"100vw",justifyContent:"center",alignItems:"center" }} className="homediv">
-                <button style={{height:"70px",fontSize:"20px",width:"150px",backgroundColor:"blue",color:"white",border:"2px solid black"}} className="homebutton">Visit Dashboard</button>
-                </div>
-              </Link>
-            }
-          />
+        <Route path="/" element={<Navigate to="/admin/dashboard" />} />
 
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/product" element={<Products />} />
